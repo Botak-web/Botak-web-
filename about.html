@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+
+<style>
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+/* card biar tetap jelas */
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.menu-btn {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+    transition: 0.4s;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #222;
+}
+
+/* CONTENT */
+.container {
+    padding: 100px 20px 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    animation: fadeUp 1s ease;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* BUTTON GLOW */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00f5d4, #9b5de5);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #9b5de5;
+}
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+    transition: 0.3s;
+}
+
+.foto:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+.wa-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #25D366, #1ebe5d);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
+    transition: 0.3s;
+}
+
+.wa-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">MyProfile</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- MENU -->
+<div class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html" style="color:#00f5d4;">About</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+    <div class="card">
+        <h2>Link donasi</h2>
+        </p>
+       
+<section class="container">
+    <div class="card">
+        <h2>kasih donasi dog kaks</h2>
+
+        <!-- FOTO -->
+        <img src="qr.jpg" class="foto">
+
+        <p>
+                    GoPay
+        </p>
+    </div>
+</section>
+        
+        <a href="https://wa.me/6281234567890" class="wa-btn">
+    kalo butuh web kayak gini tinggal bilang aja ya lekk
+</a>
